@@ -31,3 +31,4 @@ resource "aviatrix_fqdn_tag_rule" "udp" {
   port          = each.value
   depends_on    = [aviatrix_fqdn.fqdn_filter]
 }
+provider "aviatrix" {}
